@@ -63,4 +63,6 @@ thead {
     display: flex;
     margin-left:280px;
     margin-bottom: 20px;
+    background-color: rgb(124, 76, 18);
+    color: white;
 }
