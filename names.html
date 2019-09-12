@@ -1,0 +1,86 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Kwagei Facebook</title>
+        <link rel="stylesheet" href="names.css">
+    </head>
+
+    <body>
+
+        <h1>Kwagei Facebook</h1>
+
+        <!-- The div that contains the table and input elements -->
+        <div id="container">
+
+            <!-- Buttons div -->
+            <div id="buttons">
+
+                <!-- Button for adding contact -->
+                <input id="addButton" onclick="showAddStaffInputElements()" type="button" value="Add Staff">
+
+
+                <!-- Button for editing contact -->
+                <input id="addButton" onclick="showEditStaffInputElements()" type="button" value="Edit Staff">
+
+
+                <!-- Button for deleting contact -->
+                <input id="addButton" onclick="showDeleteStaffInputElement()" type="button" value="Delete Staff">
+
+            </div>
+
+           
+
+            <!-- The div that holds the input elements for adding staff -->
+            <div id="addStaffInputElements">
+
+                <input type="text" id="addFirstNameInput" placeholder="First Name"> 
+                <input type="text" id="addLastNameInput" placeholder="Last Name"> 
+                <input type="text" id="addContactInput" placeholder="Contact"> 
+                <input type="submit" value="Submit" onclick="addStaff()">
+
+            </div>
+
+            <!-- The div that holds the input elements for editing staff -->
+            <div id="editStaffInputElements">
+
+                <input type="text" id="noInput" placeholder="Number"> 
+                <input type="text" id="editFirstNameInput" placeholder="First Name"> 
+                <input type="text" id="editLastNameInput" placeholder="Last Name"> 
+                <input type="text" id="editContactInput" placeholder="Contact"> 
+                <input type="submit" onclick = "editStaff()" value="Submit">
+
+            </div>
+
+            <!-- The div that holds the input elements for deleting staff -->
+            <div id="deleteStaffInputElement">
+
+                <input type="text" id="deleteInput" placeholder="Number">
+                <input type="submit" value="Submit" onclick="deleteStaff()">
+                
+            </div>
+
+            <!-- The table div -->
+            <div id="tablediv">
+
+                <table id = "table">
+                    <thead>
+                        <tr>
+                            <th>No:</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">  
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+        <script src="names.js"></script>
+    </body>
+
+</html>
