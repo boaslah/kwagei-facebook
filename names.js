@@ -160,7 +160,7 @@ function editStaff() {
         noInput.value = " ";
 };
 
-// function to delect satff
+// function to delete satff
 function deleteStaff() {
         for (i = 0; i < teamMembers.length; i++) {
                 if (deleteInput.value - 1 == i) {
