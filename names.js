@@ -46,6 +46,7 @@ var deleteStaffInput = document.getElementById("deleteStaffInputElement");
 var table = document.getElementById("tablediv");
 var deleteInput = document.getElementById("deleteInput");
 
+
 // function to show the  add staff input elements
 function showAddStaffInputElements() {
         deleteStaffInput.style.display = "none";
@@ -72,7 +73,7 @@ function showDeleteStaffInputElement() {
 
 displayStaff();
 
-// function to display staf
+// function to display staff
 function displayStaff() {
         table.style.display = " block";
 
@@ -106,6 +107,7 @@ function displayStaff() {
 
 // function to add staff
 function addStaff() {
+
         var newTeamMembers = {
                 firstName: addFirstNameInput.value,
                 lastName: addLastNameInput.value,
@@ -123,6 +125,8 @@ function addStaff() {
         firstNameElement.textContent = newTeamMembers.firstName;
         lastNameElement.textContent = newTeamMembers.lastName;
         contactElement.textContent = newTeamMembers.contact;
+        numberElement.textContent = teamMembers.length+1;
+
 
         // append table data to table row
         rowElement.append(numberElement);
@@ -164,7 +168,7 @@ function editStaff() {
 function deleteStaff() {
         for (i = 0; i < teamMembers.length; i++) {
                 if (deleteInput.value - 1 == i) {
-                        teamMembers.splice(i, i+1);
+                        teamMembers.splice(i, 1);
                 }
         }
         tableBody.innerHTML = " ";
