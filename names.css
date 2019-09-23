@@ -21,7 +21,7 @@ table, th, td {
 }
 
 #addButton {
-    display: block;
+    margin-left: 150px;
 }
 
 #addStaffInputElements {
@@ -32,7 +32,7 @@ table, th, td {
     display: none;
 }
 
-#editStaffInputElements {
+/* #editStaffInputElements {
     margin-left: 0px;
     display: flex;
     margin-bottom: 30px;
@@ -41,12 +41,12 @@ table, th, td {
 }
 
 #deleteStaffInputElement {
-    margin-left: 300px;
+    margin-left: 60px;
     display: flex;
     margin-bottom: 30px;
     margin-top:30px;
     display: none;
-}
+} */
 
 input {
     height: 35px;
@@ -63,6 +63,4 @@ thead {
     display: flex;
     margin-left:280px;
     margin-bottom: 20px;
-    background-color: rgb(124, 76, 18);
-    color: white;
 }
