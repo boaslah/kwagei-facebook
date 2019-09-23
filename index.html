@@ -17,19 +17,17 @@
             <div id="buttons">
 
                 <!-- Button for adding contact -->
-                <input id="addButton" onclick="showAddStaffInputElements()" type="button" value="Add Staff">
+                <input id="addButton" onclick="kwageiFacebook.showAddStaffInputElements()" type="button" value="Add Staff">
 
 
                 <!-- Button for editing contact -->
-                <input id="addButton" onclick="showEditStaffInputElements()" type="button" value="Edit Staff">
+                <!-- <input id="addButton" onclick="kwageiFacebook.showEditStaffInputElements()" type="button" value="Edit Staff"> -->
 
 
                 <!-- Button for deleting contact -->
-                <input id="addButton" onclick="showDeleteStaffInputElement()" type="button" value="Delete Staff">
+                <!-- <input id="addButton" onclick="kwageiFacebook.showDeleteStaffInputElement()" type="button" value="Delete Staff"> -->
 
             </div>
-
-           
 
             <!-- The div that holds the input elements for adding staff -->
             <div id="addStaffInputElements">
@@ -37,26 +35,26 @@
                 <input type="text" id="addFirstNameInput" placeholder="First Name"> 
                 <input type="text" id="addLastNameInput" placeholder="Last Name"> 
                 <input type="text" id="addContactInput" placeholder="Contact"> 
-                <input type="submit" value="Submit" onclick="addStaff()">
+                <input type="submit" value="Submit" onclick="kwageiFacebook.addStaff()">
 
             </div>
 
             <!-- The div that holds the input elements for editing staff -->
             <div id="editStaffInputElements">
 
-                <input type="text" id="noInput" placeholder="Number"> 
+                <!-- <input type="text" id="noInput" placeholder="Number"> 
                 <input type="text" id="editFirstNameInput" placeholder="First Name"> 
                 <input type="text" id="editLastNameInput" placeholder="Last Name"> 
                 <input type="text" id="editContactInput" placeholder="Contact"> 
-                <input type="submit" onclick = "editStaff()" value="Submit">
+                <input type="submit" onclick = "kwageiFacebook.editStaff()" value="Submit"> -->
 
             </div>
 
             <!-- The div that holds the input elements for deleting staff -->
             <div id="deleteStaffInputElement">
 
-                <input type="text" id="deleteInput" placeholder="Number">
-                <input type="submit" value="Submit" onclick="deleteStaff()">
+                <!-- <input type="text" id="deleteInput" placeholder="Number"> -->
+                <!-- <input type="submit" value="Submit" onclick="kwageiFacebook.deleteStaff()"> -->
                 
             </div>
 
@@ -70,6 +68,7 @@
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Contact</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody id="tbody">  
