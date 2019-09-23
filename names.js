@@ -57,22 +57,6 @@ var kwageiFacebook =  {
                 editStaffInputs.style.display = "none";
         },
         
-        // function to show the  edit staff input elements
-        // showEditStaffInputElements: function () {
-        //         addStaffInputs.style.display = "none";
-        //         deleteStaffInput.style.display = "none";
-        //         editStaffInputs.style.display = "block";
-        //         editStaffInputs.style.display = "flex";
-        // },
-        
-        // function to show the  delect staff input element
-        // showDeleteStaffInputElement: function () {
-        //         deleteStaffInput.style.display = "block";
-        //         addStaffInputs.style.display = "none";
-        //         editStaffInputs.style.display = "none";
-        //         deleteStaffInput.style.display = "flex";
-        // },
-        
         // function to display staff
         displayStaff: function () {
 
