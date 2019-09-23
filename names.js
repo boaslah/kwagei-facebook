@@ -51,11 +51,10 @@ var kwageiFacebook =  {
    
         // function to show the  add staff input elements
         showAddStaffInputElements: function () {
-                deleteStaffInput.style.display = "none";
                 addStaffInputs.style.display = "block";
                 addStaffInputs.style.display = "flex";
-                editStaffInputs.style.display = "none";
         },
+
         
         // function to display staff
         displayStaff: function () {
