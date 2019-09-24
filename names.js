@@ -13,7 +13,6 @@ var deleteStaffInput = document.getElementById("deleteStaffInputElement");
 var table = document.getElementById("tablediv");
 var deleteInput = document.getElementById("deleteInput");
 
-
 //kwagei facefook objeect
 var kwageiFacebook =  {
        teamMembers:[
@@ -60,7 +59,7 @@ var kwageiFacebook =  {
         displayStaff: function () {
 
                 for (i = 0; i < this.teamMembers.length; i++) {
-        
+
                         // creat table data elements
                         var rowElement = document.createElement("tr");
                         var numberElement = document.createElement("td");
@@ -97,55 +96,21 @@ var kwageiFacebook =  {
         
         // function to add staff
         addStaff: function () {
-                console.log(addFirstNameInput.value !== '')
-                if(addFirstNameInput.value !== " " && addLastNameInput.value !== "  " && addContactInput.value !== "  " ){
+
+                if(addFirstNameInput.value !== "" && addLastNameInput.value !== "" && addContactInput.value !== "" ){
 
                         var newTeamMembers = {
                                 firstName: addFirstNameInput.value,
                                 lastName: addLastNameInput.value,
                                 contact: addContactInput.value
                         };
+                        this.teamMembers.push(newTeamMembers);
+                        tableBody.innerHTML = " ";
+                        this.displayStaff();
 
-                        //creat table data elements
-                        var rowElement = document.createElement("tr");
-                        var numberElement = document.createElement("td");
-                        var firstNameElement = document.createElement("td");
-                        var rowElement = document.createElement("tr");
-                        var numberElement = document.createElement("td");
-                        var firstNameElement = document.createElement("td");
-                        var lastNameElement = document.createElement("td");
-                        var contactElement = document.createElement("td");
-                        var lastNameElement = document.createElement("td");
-                        var contactElement = document.createElement("td");
-                        var editAction = document.createElement("td");
-                        var deleteAction = document.createElement("td");
-                        deleteAction = document.createElement("button");
-                        editAction = document.createElement("button");
-
-                        // creat text content for table data elements
-                        deleteAction.textContent = "Delete";
-                        editAction.textContent = "Edit"
-                        firstNameElement.textContent = newTeamMembers.firstName;
-                        lastNameElement.textContent =  newTeamMembers.lastName;
-                        contactElement.textContent = newTeamMembers.contact;
-                        numberElement.textContent = this.teamMembers.length + 1;
-                        this.teamMembers.push(newTeamMembers)
-
-                        // append table data to table row //creat table data elements
-                        rowElement.append(numberElement);
-                        rowElement.append(firstNameElement);
-                        rowElement.append(lastNameElement);
-                        rowElement.append(contactElement);
-                        rowElement.append(deleteAction);
-                        rowElement.append(editAction);
-
-                        // appemd table row to table body
-                        tableBody.append(rowElement);
-
-                        // clear input elements
-                        addFirstNameInput.value = " ";
-                        addLastNameInput.value = " ";
-                        addContactInput.value = " ";
+                        addFirstNameInput.value = "";
+                        addLastNameInput.value = "";
+                        addContactInput.value = "";
                 }else{
                         alert("please enter a user")
                 }
@@ -165,10 +130,10 @@ var kwageiFacebook =  {
                 //creat table data elements
                 this.displayStaff();
         
-                editFirstNameInput.value = " ";
-                editLastNameInput.value = " ";
-                editContactInput.value = " ";
-                noInput.value = " ";
+                editFirstNameInput.value = "";
+                editLastNameInput.value = "";
+                editContactInput.value = "";
+                noInput.value = "";
         },
         
         // function to delete satff
@@ -179,10 +144,10 @@ var kwageiFacebook =  {
                         }
                 }
                 tableBody.innerHTML = " ";
-        
+                
                 this.displayStaff();
         
-                deleteInput.value  = " ";
+                deleteInput.value  = "";
         }
 }
 
