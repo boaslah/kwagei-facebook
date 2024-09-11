@@ -19,32 +19,32 @@ var kwageiFacebook =  {
                 {
                 firstName: "Kpetermeni",
                 lastName: "Siakor",
-                contact: "0776931461"
+                contact: "077887753"
                 },
                 {
                 firstName: "Emmanuel",
                 lastName: "Jaygbay",
-                contact: "0775715771"
+                contact: "077887753"
                 },
                 {
                 firstName: "Nathan",
                 lastName: "Siafa",
-                contact: "0778415037"
+                contact: "077887753"
                 },
                 {
                 firstName: "Rudeen",
                 lastName: " Zarwolo",
-                contact: "0777967844"
+                contact: "077887753"
                 },
                 {
                 firstName: "Carlos",
                 lastName: "Nah",
-                contact: "0776728619"
+                contact: "077887753"
                 },
                 {
                 firstName: "Blessing",
                 lastName: "Boaslah",
-                contact: "0778128252"
+                contact: "077887753"
                 }
         ],
    
